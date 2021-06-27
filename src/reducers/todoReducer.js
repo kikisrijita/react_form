@@ -17,6 +17,14 @@ const todoReducer = (state=initialData,action) => {
                     }
                 ]
             }
+        case "DELETE_MUSIC":
+            // const {id} = action.payload
+            return {
+                ...state,
+                musicList:
+                    state.musicList.filter((el) =>  el.id !== action.payload.id)
+                
+            }
         default: return state
     }
 }

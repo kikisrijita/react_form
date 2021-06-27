@@ -7,8 +7,11 @@ export const addMusic = (data) => {
         }
     }
 }
-export const deleteMusic = () => {
+export const deleteMusic = (id) => {
     return {
-        type: "DELETE_MUSIC"
+        type: "DELETE_MUSIC",
+        payload:{
+            id: id
+        }
     }
 }

@@ -1,6 +1,10 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
+import { deleteMusic } from '../actions/index'
+
 
 const Table = ({list}) => {
+    const dispatch = useDispatch()
     return (
         <>
         <table className="show-item">
@@ -27,7 +31,9 @@ const Table = ({list}) => {
                 <td key={index}>
                 {el.data.singer}
                 </td>
+                <i class="fas fa-minus-circle" onClick={() => dispatch(deleteMusic(el.id))}></i>
                 </tr>
+               
                 )
             })}
       
