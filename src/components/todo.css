@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main-div {
+  min-height: 100vh;
+  background: #70706d;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.child-div {
+  text-align: center;
+  margin-top: 12rem;
+}
+
+.child-div figure img {
+  width: 10rem;
+  height: 8rem;
+}
+
+.child-div figure figcaption {
+  color: #fff;
+  font-size: 2.2rem;
+  padding-top: 2rem;
+  text-transform: capitalize;
+}
+
+input {
+  /* display: block; */
+  min-width: 20rem;
+  height: 3.4rem;
+  padding: 2rem 1.2rem;
+  font-size: 1.8rem;
+  line-height: 1.42857143;
+  margin: 2rem;
+  color: rgb(58, 57, 57);
+  background-color: #fff;
+  background-image: none;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.4rem;
+  -webkit-box-shadow: inset 0 0.1rem 0.1rem rgb(0 0 0 / 8%);
+  box-shadow: inset 0 0.1rem 0.1rem rgb(0 0 0 / 8%);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+input,
+input:focus,
+input:active,
+input:active:focus {
+  border: none;
+  padding: 2rem 1rem;
+  outline: none;
+}
+input {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+input:focus {
+  -webkit-box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+}
+.todo-btn {
+  width: 10rem;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  color: #fff;
+}
+
+td,
+th {
+  border: 1px solid #4b4a4a;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(odd) {
+  font-size: 20px;
+}
+
+tr:nth-child(even) {
+  background-color: #dcff7c;
+  color: #000000;
+  font-size: 20px;
+}
